@@ -123,24 +123,26 @@ nav li {
 }
 
 .grid-container{
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr) ;
+    grid-template-columns: repeat(4,1fr) ;
     align-items: center;
     justify-items: center;
     justify-content: center;
-    grid-row-gap: 15px;
+    grid-row-gap: 20px;
 }
 
 .grid-container img{
-    height: 450px;
+    height: 400px;
 }
 
 .grid-container div{
     width: 250px;
     overflow: hidden;
 }
+
+
 
 main {
     min-height: 80vh;

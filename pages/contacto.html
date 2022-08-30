@@ -7,8 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Set, go! | CONTACTO</title>
 	<link rel="stylesheet" href="../style.css" />
-	<link href-"https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<link href-"https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href-"https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href-"https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,16 +20,17 @@
 	<header class="header">
 		<a href="../index.html">
 
-			<img src="../IMG/SetGo-Logo-2500px.PNG" width="150" height="150" alt="">
+			<img class="animate__animated animate__fadeInUp" src="../IMG/SetGo-Logo-2500px.PNG" width="150" height="150" alt="">
 
 		</a>
 
 		<nav>
-			<ul>
+			<ul class="animate__animated animate__zoomIn">
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="presskit.html">Presskit</a></li>
 				<li><a href="acercade.html">Acerca de</a></li>
 				<li><a href="canciones.html">Canciones</a></li>
+				<li><a href="videos.html">Videos</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 
 			</ul>
@@ -36,26 +40,43 @@
 	<main>
 
 		<h1>CONTACTO</h1>
-		<form action="#">
+		<!-- Default form contact -->
+<form class="text-center border border-light p-5" action="#!">
 
+    <p class="h4 mb-4">Contáctanos</p>
 
-			<label for="nombre">NOMBRE:
-				<input type="text" placeholder="NOMBRE"><br><br>
-				<label for="email">MAIL:
-					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
-				</label>
-				<br>
-				<label for="Comentarios"> Comentarios:<br>
-					<textarea placeholder="Comentarios"></textarea>
-				</label> <br>
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre">
 
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-				<div>Queres recibir info sobre nosotros?
-					<input type="checkbox" name="acepta" value="1">
-				</div>
-				<input type="submit" value="ENVIAR">
-				<input type="reset" value="RESETEAR">
-		</form>
+    <!-- Subject -->
+    <label>Asunto</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Contrataciones</option>
+        <option value="2">Prensa</option>
+        <option value="3">Relaciones públicas</option>
+        <option value="4">Patrocinios</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Mensaje"></textarea>
+    </div>
+
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Enviarme una copia de este mensaje</label>
+    </div>
+
+    <!-- Send button -->
+    <button class="btn btn-info btn-block" type="submit">Enviar</button>
+
+</form>
+<!-- Default form contact -->
 
 
 
